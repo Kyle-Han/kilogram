@@ -45,8 +45,14 @@ namespace Telegram.UI {
             this.BackKeyPress += delegate {
                 Application.Current.Terminate();
             };
+            phoneControl.Changed += phoneControl_OnChanged;
 
             Login();
+        }
+
+        void phoneControl_OnChanged(object sender, EventArgs e)
+        {
+            nextButton.IsEnabled = phoneControl.FormValid();
         }
 
         private async Task Login() {

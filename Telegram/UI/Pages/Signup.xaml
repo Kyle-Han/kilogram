@@ -37,7 +37,7 @@
             <local:SignupPhone_Control x:Name="phoneControl" Visibility="Visible" Margin="0,0,6,0"/>
             <local:SignupCode_Control x:Name="codeControl" Visibility="Collapsed"/>
             <local:SignupName_Control x:Name="nameControl" Visibility="Collapsed"/>
-			<Button x:Name="nextButton" Content="next" HorizontalAlignment="Left" VerticalAlignment="Top" Width="215" BorderBrush="#FF404040" Foreground="#FF404040" Margin="0,10,0,0" Click="nextButton_Click"/>
+			<Button x:Name="nextButton" Content="next" HorizontalAlignment="Left" VerticalAlignment="Top" Width="215" IsEnabled="False" Margin="0,10,0,0" Click="nextButton_Click"/>
 		</StackPanel>
 
 	</Grid>
